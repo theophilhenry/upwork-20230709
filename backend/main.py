@@ -19,7 +19,10 @@ app = FastAPI()
 #     "http://localhost:3000",
 # ]
 
-origins = ["*"]
+origins = [
+  "https://frontend-upwork.theojust.my.id",
+  "https://theojust.my.id",
+]
 
 app.add_middleware(
     CORSMiddleware,

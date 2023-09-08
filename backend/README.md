@@ -8,7 +8,8 @@
 First create VENV
 ```
 python -m venv venv
-.\venv\Scripts\activate
+.\venv\Scripts\activate # Windows
+source ./venv/bin/activate # Windows
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
