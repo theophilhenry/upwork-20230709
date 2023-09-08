@@ -19,18 +19,18 @@ app = FastAPI()
 #     "http://localhost:3000",
 # ]
 
-origins = [
-  "https://frontend-upwork.theojust.my.id",
-  "https://theojust.my.id",
-]
+# origins = [
+#   "https://frontend-upwork.theojust.my.id",
+#   "https://theojust.my.id",
+# ]
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=origins,
+#     allow_credentials=True,
+#     allow_methods=["*"],
+#     allow_headers=["*"],
+# )
 
 @app.get('/ping')
 async def ping():
